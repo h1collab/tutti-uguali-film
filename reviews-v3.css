@@ -5,3 +5,13 @@
 @media(max-width:740px){.reviews-v3{grid-template-columns:1fr}.store-summary{position:static}.store-score{gap:25px}.store-score-number{font-size:78px}.review-content{width:100%}.review-filter-head{gap:15px}}
 @media(max-width:550px){.store-summary{padding:23px}.review-filter-tabs{margin-inline:-2px}.review-filter{font-size:11px;padding:9px 12px}.review-content .review-card{padding:19px!important}.review-card blockquote{font-size:13px!important}.review-filter-head h3{font-size:18px}.store-score-number{font-size:73px}.store-score-side{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.dist-fill{transition:none!important;width:var(--dist)!important}.review-card.is-highlight{animation:none!important}}
+
+/* Expanded review archive (24 owner-supplied ratings): editorial typography and mobile reveal */
+.editorial-review-title{font-size:16px;line-height:1.35;font-weight:800;color:#eff7f5;margin:0 0 11px;letter-spacing:-.012em}
+.reviews-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:19px 4px 8px}
+.reviews-pagination-info{font-size:12px;color:#9eb0b5}
+.review-more{border:1px solid #6ee1d780;border-radius:100px;padding:12px 18px;background:#69e7d713;color:#aff7e9;font-size:12px;font-weight:800;transition:background .2s,transform .2s}
+.review-more:hover{background:#6aead92c;transform:translateY(-2px)}
+.review-more[hidden]{display:none!important}
+@media(max-width:550px){.editorial-review-title{font-size:15px}.reviews-pagination{align-items:stretch}.review-more{width:100%}}
+@media(prefers-reduced-motion:reduce){.review-more{transition:none!important}}
