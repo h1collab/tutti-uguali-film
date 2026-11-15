@@ -1,4 +1,4 @@
-/* These 20 reviews were provided by the site owner. Not GitHub-verified. */
+/* Static reviews shown on the movie page. GitHub Issues reviews use a separate public API feed. */
 window.ZORIX_ADDITIONAL_REVIEWS=[
   {
     "id": 5,
