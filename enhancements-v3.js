@@ -16,7 +16,7 @@ swapOriginalPoster();
 var section=document.getElementById('editorial-reviews');
 if(!section)return;
 var additional=Array.isArray(window.ZORIX_ADDITIONAL_REVIEWS)?window.ZORIX_ADDITIONAL_REVIEWS:[];
-/* Supplied feedback is not presented as independently verified GitHub reviews. */
+/* Static reviews appear in the editorial review section; GitHub Issues are rendered separately. */
 additional.forEach(function(r,i){
  if(!r||!Number.isFinite(r.score)||r.score<1||r.score>10)return;
  var article=document.createElement('article');
@@ -30,7 +30,7 @@ additional.forEach(function(r,i){
  var source=document.createElement('span');source.className='review-source';
  var avatar=document.createElement('span');avatar.className='avatar';avatar.textContent=String(i+5).padStart(2,'0');
  var author=document.createElement('span');author.textContent='Spettatore';
- var small=document.createElement('small');small.className='review-bylines';small.textContent='Feedback fornito a ZORIX';
+ var small=document.createElement('small');small.className='review-bylines';small.textContent='Recensione del pubblico';
  author.appendChild(small);
  source.append(avatar,author);
  var badge=document.createElement('span');badge.className='rating-pill';badge.textContent=r.score.toFixed(1).replace('.',',')+' / 10';
