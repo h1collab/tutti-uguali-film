@@ -84,7 +84,7 @@ var score=Number(title[1].replace(',','.'));if(score<1||score>10)return;
 if(seen.has(issue.user.login))return;seen.add(issue.user.login);
 reviews.push({issue:issue,score:score});
 });
-if(!reviews.length){stats.textContent='Nessuna recensione pubblicata su GitHub';var blank=document.createElement('p');blank.className='empty-state';blank.textContent='Non ci sono ancora recensioni GitHub. Le quattro recensioni ricevute sono mostrate sopra.';list.append(blank);return;}
+if(!reviews.length){stats.textContent='Nessuna recensione pubblicata su GitHub';var blank=document.createElement('p');blank.className='empty-state';blank.textContent='Non ci sono ancora recensioni GitHub. Le recensioni condivise con ZORIX sono mostrate sopra, separatamente dalle recensioni GitHub.';list.append(blank);return;}
 var mean=reviews.reduce(function(s,r){return s+r.score;},0)/reviews.length;
 stats.textContent=reviews.length+' recensioni verificate tramite GitHub · Media '+formatScore(mean)+'/10';
 reviews.slice(0,8).forEach(function(r,i){
