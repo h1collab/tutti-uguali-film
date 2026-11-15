@@ -1,45 +1,350 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width,initial-scale=1">
-<title>TUTTI UGUALI | ZORIX</title>
-<style>
-body {
-  background:#10151c;
-  color:white;
-  font-family:Arial,sans-serif;
-  margin:0;
-  padding:30px 15px;
-  text-align:center;
-}
-main {
-  max-width:900px;
-  margin:auto;
-}
-video {
-  width:100%;
-  border-radius:12px;
-  background:black;
-}
-h1 {letter-spacing:3px}
-p {color:#c5cbd5}
-a {color:#90dbda}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1118">
+  <meta name="description" content="TUTTI UGUALI: un cortometraggio originale ZORIX. Una votazione scolastica, una scelta già decisa e il coraggio di dire la verità. Guarda il film e lascia una recensione su 10.">
+  <meta property="og:type" content="video.movie">
+  <meta property="og:site_name" content="ZORIX Movies">
+  <meta property="og:title" content="TUTTI UGUALI — ZORIX Original Film">
+  <meta property="og:description" content="Non tutti contano allo stesso modo. Guarda il cortometraggio originale ZORIX.">
+  <meta property="og:image" content="https://movies.zorix.it/poster.webp">
+  <meta property="og:url" content="https://movies.zorix.it/">
+  <link rel="canonical" href="https://movies.zorix.it/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <title>TUTTI UGUALI — Guarda il film | ZORIX Movies</title>
+  <style>
+    :root { color-scheme:dark; --bg:#090f16;--bg2:#121c25;--ink:#f7f5ee;--sub:#a9b3ba;--line:rgba(228,238,237,.13);--accent:#69e3da;--warm:#e8d6b6;--r:20px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.55; }
+    body:before { content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 85% 0%,#1a2b32 0%,transparent 46%),linear-gradient(#0b121a,#080c13); }
+    a { color:inherit; } button,textarea { font:inherit; }
+    button { cursor:pointer; } :focus-visible { outline:3px solid #69e3da;outline-offset:4px; }
+    .skip { position:absolute;left:-9999px;top:10px;z-index:50;background:#fff;color:#000;padding:10px; }
+    .skip:focus { left:10px; }
+    .shell { max-width:1190px;margin:0 auto;padding:0 clamp(20px,4.2vw,55px); }
+    .nav { height:77px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:20px; }
+    .wordmark { display:flex;gap:10px;align-items:center;text-decoration:none;font-weight:900;letter-spacing:.16em;font-size:19px;white-space:nowrap; }
+    .mark { width:34px;height:34px;display:inline-grid;place-items:center;border-radius:11px;background:linear-gradient(135deg,#1281fa,#19c8bc,#43bb79);color:white;font-size:19px;letter-spacing:0;font-weight:900;box-shadow:0 6px 22px #18b6bf26; }
+    .wordmark small { color:var(--sub);font-size:9px;letter-spacing:.25em;display:block;font-weight:600;line-height:1.2;margin-top:1px; }
+    .navlinks { display:flex;align-items:center;gap:24px;font-size:12px;text-transform:uppercase;letter-spacing:.1em;font-weight:700; }
+    .navlinks a { text-decoration:none;color:#c4d0d5;transition:color .2s; }.navlinks a:hover {color:white;}
+    .navlinks .back { border:1px solid var(--line);border-radius:999px;padding:10px 14px; }
+    .hero { position:relative;overflow:hidden; }
+    .hero:before { content:"";position:absolute;z-index:-1;inset:0 0 auto 0;height:480px;background:radial-gradient(circle at 40% 10%,#31444c61,transparent 55%),linear-gradient(transparent,#090f16); }
+    .hero-inner { display:grid;grid-template-columns:minmax(260px,348px) minmax(0,1fr);gap:clamp(32px,6vw,92px);align-items:center;padding-top:58px;padding-bottom:72px; }
+    .poster { width:100%;aspect-ratio:2/3;overflow:hidden;background:linear-gradient(160deg,#444235,#222f37,#111822);border-radius:14px;box-shadow:0 25px 70px #0009,0 1px 0 #ffffff29 inset;position:relative; }
+    .poster img { width:100%;height:100%;display:block;object-fit:cover; }
+    .poster .fallback { position:absolute;inset:0;z-index:-1;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:28px 18px;text-align:center;background:linear-gradient(150deg,#3b3733,#141e25);font-family:Georgia,serif;color:var(--warm); }
+    .fallback strong {font-size:clamp(32px,4vw,47px);line-height:1.1;font-weight:400;}
+    .fallback em {font-size:17px;}
+    .poster:after {content:"";position:absolute;inset:0;pointer-events:none;border:1px solid #ffffff20;border-radius:14px;}
+    .eyebrow { display:inline-flex;align-items:center;gap:10px;color:var(--accent);font-size:11px;letter-spacing:.25em;text-transform:uppercase;font-weight:800; }
+    .eyebrow:before {content:"";display:block;width:22px;height:1px;background:currentColor;}
+    h1 {font-family:Georgia,"Times New Roman",serif;font-size:clamp(55px,7.6vw,103px);font-weight:400;letter-spacing:-.065em;line-height:.94;margin:25px 0;}
+    h1 span {display:block;}
+    .tagline {font-family:Georgia,serif;font-style:italic;color:var(--warm);font-size:clamp(20px,2.4vw,29px);line-height:1.33;max-width:600px;margin:0 0 23px;}
+    .meta {display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:28px;color:#d0d8da;font-size:13px;}
+    .meta span {padding:6px 11px;border:1px solid var(--line);border-radius:6px;background:#ffffff06;white-space:nowrap;}
+    .summary {max-width:640px;color:var(--sub);font-size:15px;line-height:1.8;margin:0 0 31px;}
+    .actions {display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+    .btn {display:inline-flex;justify-content:center;align-items:center;gap:11px;min-height:52px;padding:13px 22px;border-radius:10px;border:1px solid var(--line);background:#ffffff0b;color:var(--ink);font-weight:800;font-size:13px;letter-spacing:.035em;text-decoration:none;transition:transform .2s,background .2s,border-color .2s;}
+    .btn:hover {transform:translateY(-2px);background:#ffffff17;border-color:#ffffff38;}
+    .btn.primary {background:var(--accent);color:#09151b;border-color:transparent;box-shadow:0 10px 32px #36d9cd20;}
+    .btn.primary:hover {background:#9ff4ed;}
+    .btn svg {width:18px;height:18px;flex:none;}
+    .availability {color:#8096a1;font-size:12px;margin-top:18px;}
+    .section {border-top:1px solid var(--line);padding:45px 0;}
+    .section-heading {display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px;}
+    .kicker {font-size:11px;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.2em;margin:0 0 9px;}
+    h2 {font-family:Georgia,serif;font-size:clamp(30px,3.5vw,43px);font-weight:400;line-height:1.15;margin:0;}
+    .feature-grid {display:grid;grid-template-columns:1.1fr .9fr;gap:24px;}
+    .panel {background:linear-gradient(150deg,#16212b,#101922);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3vw,35px);}
+    .panel p {color:var(--sub);line-height:1.78;}
+    .quote {font-family:Georgia,serif;font-style:italic;color:var(--warm);font-size:26px;line-height:1.3;margin:0 0 23px;}
+    .characters {display:flex;gap:8px;flex-wrap:wrap;}
+    .chip {padding:8px 13px;border-radius:99px;border:1px solid #ffffff25;font-size:12px;color:#dce5e5;background:#ffffff06;}
+    .small-heading {font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:#d1dfe2;margin:0 0 12px;font-weight:800;}
+    .rating-wrap {display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,1.1fr);gap:24px;}
+    .scoreline {display:flex;align-items:baseline;gap:9px;}
+    .scoreline strong {font-size:56px;line-height:1.1;font-weight:750;letter-spacing:-.06em;}
+    .scoreline span {color:#a7b3b9;font-size:21px;}
+    .fine {font-size:12px!important;color:#90a1aa!important;line-height:1.7!important;}
+    .rating-buttons {display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:5px;margin:16px 0 18px;}
+    .rating-buttons button {padding:0;aspect-ratio:1;border:1px solid #ffffff2a;border-radius:8px;background:#ffffff08;color:#d7e0e2;font-weight:800;font-size:12px;transition:.18s;}
+    .rating-buttons button:hover {border-color:var(--accent);background:#69e3da1e;}
+    .rating-buttons button[aria-pressed="true"] {background:var(--accent);color:#08181c;border-color:var(--accent);}
+    .my-score {font-size:13px;color:var(--warm);min-height:20px;}
+    textarea {width:100%;min-height:110px;resize:vertical;background:#0d151d;border:1px solid #ffffff2b;border-radius:10px;padding:14px;color:#fff;outline:none;}
+    textarea:focus {border-color:var(--accent);}
+    .review-actions {display:flex;align-items:center;flex-wrap:wrap;gap:13px;margin-top:15px;}
+    button:disabled {opacity:.45;cursor:not-allowed;transform:none!important;}
+    .review-list {display:grid;gap:13px;margin-top:22px;}
+    .review {border:1px solid var(--line);background:#ffffff05;border-radius:13px;padding:18px;display:grid;gap:8px;}
+    .review-head {display:flex;align-items:center;gap:12px;}
+    .review-head img {width:32px;height:32px;border-radius:50%;background:#1d333d;}
+    .review-head a {font-weight:800;text-decoration:none;font-size:13px;}
+    .review-head a:hover {text-decoration:underline;}
+    .review .rating-pill {margin-left:auto;padding:5px 9px;background:#69e3da18;border:1px solid #69e3da54;border-radius:6px;color:#8cf5eb;font-weight:900;font-size:12px;}
+    .review p {margin:0;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;}
+    .review time {font-size:11px;color:#90a1aa;}
+    .outlink {display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:13px;font-weight:800;text-decoration:none;}
+    .outlink:hover {text-decoration:underline;}
+    footer {border-top:1px solid var(--line);padding:30px 0 45px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#8d9ca5;font-size:12px;}
+    footer a {text-decoration:none;color:#c3d2d5;}
+    dialog.player {padding:0;border:1px solid #ffffff24;border-radius:16px;overflow:visible;background:#070b0f;color:white;width:min(96vw,1120px);max-width:1120px;max-height:95dvh;box-shadow:0 35px 120px #000e;}
+    dialog.player::backdrop {background:#01050be8;backdrop-filter:blur(11px);}
+    .player-top {padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px;font-weight:800;}
+    .close {border:1px solid #ffffff30;border-radius:100px;background:#ffffff12;color:white;width:33px;height:33px;font-size:20px;line-height:1;}
+    .player video {width:100%;max-height:calc(95dvh - 72px);aspect-ratio:16/9;display:block;background:#000;object-fit:contain;}
+    @media(max-width:850px) {
+      .navlinks a:not(.back){display:none;}
+      .hero-inner {grid-template-columns:200px minmax(0,1fr);gap:28px;}
+      h1 {font-size:clamp(42px,7.6vw,72px);}
+      .rating-wrap {grid-template-columns:1fr;}
+    }
+    @media(max-width:620px) {
+      .nav {height:66px;}
+      .hero-inner {grid-template-columns:1fr;padding-top:28px;padding-bottom:44px;gap:26px;}
+      .poster {max-width:248px;margin:auto;}
+      .hero-content {text-align:left;}
+      h1 {font-size:clamp(57px,15vw,83px);margin:18px 0;}
+      .meta {gap:7px;}
+      .meta span {font-size:11px;}
+      .actions .btn {flex:1;}
+      .feature-grid {grid-template-columns:1fr;}
+      .section {padding:34px 0;}
+      .panel {padding:20px;}
+      .rating-buttons {gap:4px;}
+      .rating-buttons button {border-radius:6px;font-size:11px;}
+    }
+    @media(prefers-reduced-motion:reduce) {html{scroll-behavior:auto;} .btn {transition:none;} }
+  </style>
 </head>
 <body>
-<main>
-<p>ZORIX ORIGINAL FILM</p>
-<h1>TUTTI UGUALI</h1>
-<p>Non tutti contano allo stesso modo.</p>
-<video controls playsinline preload="metadata">
-<source src="./TUTTI_UGUALI.mp4"
-        type="video/mp4">
-Il browser non supporta questo video.
-</video>
-<p>Un cortometraggio originale ZORIX</p>
-<p><a href="https://zorix.it">ZORIX.IT</a></p>
-</main>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <header class="shell">
+    <nav class="nav" aria-label="Navigazione">
+      <a class="wordmark" href="https://zorix.it/" aria-label="ZORIX, homepage">
+        <span class="mark" aria-hidden="true">Z</span><span>ZORIX<small>ORIGINAL FILMS</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#storia">Il film</a>
+        <a href="#recensioni">Recensioni</a>
+        <a href="https://zorix.it/" class="back">Torna a ZORIX.IT ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="shell hero-inner">
+        <div class="poster">
+          <div class="fallback"><strong>TUTTI<br>UGUALI</strong><em>Non tutti contano<br>allo stesso modo.</em></div>
+          <img src="./poster.webp" alt="Locandina ufficiale di TUTTI UGUALI: Sofia con il quaderno blu, insieme a Leila, Mattia e la professoressa Bianchi." width="1024" height="1536" fetchpriority="high" onerror="this.hidden=true">
+        </div>
+        <div class="hero-content">
+          <span class="eyebrow">ZORIX Original Film · 2026</span>
+          <h1><span>TUTTI</span><span>UGUALI</span></h1>
+          <p class="tagline">Non tutti contano allo stesso modo.</p>
+          <div class="meta" aria-label="Dettagli del film">
+            <span>Cortometraggio</span><span>Dramma sociale</span><span>Italiano</span><span data-duration>Circa 9 min</span>
+          </div>
+          <p class="summary">In una scuola che promette uguaglianza e democrazia, Sofia scopre che una votazione potrebbe essere stata decisa prima ancora di cominciare. Tra favoritismi, compromessi e silenzi, dovrà scegliere se proteggere il proprio futuro o dire la verità.</p>
+          <div class="actions">
+            <button class="btn primary" id="watch" type="button">
+              <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              Guarda il film
+            </button>
+            <a class="btn" href="#recensioni">★ Vota da 1 a 10</a>
+          </div>
+          <p class="availability">Visione gratuita · Film completo · Riproduzione in questa pagina</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="storia">
+      <div class="section-heading">
+        <div><p class="kicker">La storia</p><h2>Quando il voto è solo una formalità.</h2></div>
+      </div>
+      <div class="feature-grid">
+        <div class="panel">
+          <p class="quote">«Era importante che vi sentiste coinvolti.»</p>
+          <p>Una scuola celebra i valori della partecipazione. Ma dietro una scelta apparentemente democratica, Sofia trova un documento che cambia tutto. Il cortometraggio esplora il peso della verità quando tacere sarebbe più semplice.</p>
+          <p class="fine">Una storia di finzione ambientata in una scuola italiana, realizzata con il supporto dell'intelligenza artificiale.</p>
+        </div>
+        <div class="panel">
+          <p class="small-heading">Personaggi</p>
+          <div class="characters">
+            <span class="chip">Sofia</span><span class="chip">Leila</span><span class="chip">Mattia</span><span class="chip">Prof.ssa Bianchi</span>
+          </div>
+          <p class="small-heading" style="margin-top:30px">Temi</p>
+          <div class="characters">
+            <span class="chip">Uguaglianza</span><span class="chip">Democrazia</span><span class="chip">Pregiudizi</span><span class="chip">Coraggio</span>
+          </div>
+          <p style="font-size:13px;margin:25px 0 0">Scritto, ideato e montato per ZORIX. Immagini e interpretazioni generate con strumenti di intelligenza artificiale.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="recensioni">
+      <div class="section-heading">
+        <div><p class="kicker">La voce del pubblico</p><h2>Recensioni e voti</h2></div>
+        <span class="chip">Scala da 1 a 10</span>
+      </div>
+      <div class="rating-wrap">
+        <div class="panel">
+          <p class="small-heading">Media delle recensioni pubbliche</p>
+          <div class="scoreline"><strong id="average">—</strong><span>/ 10</span></div>
+          <p id="count" class="fine" aria-live="polite">Caricamento recensioni…</p>
+          <div class="review-list" id="review-list" aria-live="polite"></div>
+          <p style="margin-top:18px"><a class="outlink" target="_blank" rel="noopener noreferrer" href="https://github.com/h1collab/tutti-uguali-film/issues?q=is%3Aissue+%22%5BRecensione%5D%22">Visualizza tutte le recensioni pubbliche ↗</a></p>
+        </div>
+        <div class="panel">
+          <p class="small-heading">Il tuo voto</p>
+          <h2 style="font-size:27px">Quanto ti è piaciuto il film?</h2>
+          <p class="fine">Scegli un punteggio da 1 a 10. Il voto personale viene ricordato su questo dispositivo; per pubblicarlo e contribuire alla media, usa GitHub gratuitamente.</p>
+          <div class="rating-buttons" id="rating-buttons" role="group" aria-label="Seleziona un voto da 1 a 10">
+            <button type="button" data-score="1" aria-pressed="false" aria-label="1 su 10">1</button>
+            <button type="button" data-score="2" aria-pressed="false" aria-label="2 su 10">2</button>
+            <button type="button" data-score="3" aria-pressed="false" aria-label="3 su 10">3</button>
+            <button type="button" data-score="4" aria-pressed="false" aria-label="4 su 10">4</button>
+            <button type="button" data-score="5" aria-pressed="false" aria-label="5 su 10">5</button>
+            <button type="button" data-score="6" aria-pressed="false" aria-label="6 su 10">6</button>
+            <button type="button" data-score="7" aria-pressed="false" aria-label="7 su 10">7</button>
+            <button type="button" data-score="8" aria-pressed="false" aria-label="8 su 10">8</button>
+            <button type="button" data-score="9" aria-pressed="false" aria-label="9 su 10">9</button>
+            <button type="button" data-score="10" aria-pressed="false" aria-label="10 su 10">10</button>
+          </div>
+          <p class="my-score" id="my-score" aria-live="polite">Nessun voto selezionato.</p>
+          <label class="small-heading" for="review-text" style="display:block;margin-top:23px">La tua recensione (facoltativa)</label>
+          <textarea id="review-text" maxlength="1000" placeholder="Che cosa ti ha colpito di più?"></textarea>
+          <div class="review-actions">
+            <button class="btn primary" type="button" id="publish" disabled>Pubblica su GitHub ↗</button>
+          </div>
+          <p class="fine">Il pulsante apre GitHub per confermare la recensione. È necessario un account GitHub; nessuna pubblicazione avviene automaticamente.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© 2026 ZORIX · <strong>TUTTI UGUALI</strong> · Un cortometraggio originale</span>
+    <span><a href="https://zorix.it/">zorix.it</a> · <a href="https://github.com/h1collab/tutti-uguali-film">Repository</a></span>
+  </footer>
+
+  <dialog class="player" id="player" aria-label="Riproduzione del film TUTTI UGUALI">
+    <div class="player-top"><span>TUTTI UGUALI <span style="color:#91a4ab;font-weight:500">· Film completo</span></span><button class="close" type="button" id="close-player" aria-label="Chiudi il video">×</button></div>
+    <video id="movie" controls playsinline preload="metadata" poster="./poster.webp">
+      <source src="./TUTTI_UGUALI.mp4" type="video/mp4">
+      Il tuo browser non supporta la riproduzione di video MP4.
+    </video>
+  </dialog>
+
+  <script>
+  (function () {
+    'use strict';
+    var dialog = document.getElementById('player');
+    var movie = document.getElementById('movie');
+    function openPlayer() {
+      if (dialog.showModal) dialog.showModal(); else dialog.setAttribute('open', '');
+      var promise = movie.play();
+      if (promise && promise.catch) promise.catch(function () {});
+    }
+    function closePlayer() {
+      movie.pause();
+      if (dialog.close) dialog.close(); else dialog.removeAttribute('open');
+    }
+    document.getElementById('watch').addEventListener('click',openPlayer);
+    document.getElementById('close-player').addEventListener('click',closePlayer);
+    dialog.addEventListener('close',function(){movie.pause();});
+    dialog.addEventListener('click',function(e){if(e.target===dialog) closePlayer();});
+    movie.addEventListener('loadedmetadata',function(){
+      if(Number.isFinite(movie.duration)){
+        var mins=Math.ceil(movie.duration/60);
+        document.querySelectorAll('[data-duration]').forEach(function(el){el.textContent=mins+' min';});
+      }
+    });
+    var key='zorix-tutti-uguali-personal-rating';
+    var score=0;
+    try { score=Number(localStorage.getItem(key))||0; } catch(e) {}
+    function renderScore(){
+      document.querySelectorAll('[data-score]').forEach(function(b){
+        b.setAttribute('aria-pressed',String(Number(b.dataset.score)===score));
+      });
+      document.getElementById('my-score').textContent=score ? ('Il tuo voto: '+score+'/10') : 'Nessun voto selezionato.';
+      document.getElementById('publish').disabled=!score;
+    }
+    document.querySelectorAll('[data-score]').forEach(function(b){
+      b.addEventListener('click',function(){
+        score=Number(b.dataset.score);
+        try{localStorage.setItem(key,String(score));}catch(e){}
+        renderScore();
+      });
+    });
+    renderScore();
+    document.getElementById('publish').addEventListener('click',function(){
+      if(!score)return;
+      var text=document.getElementById('review-text').value.trim().slice(0,1000);
+      var title='[Recensione] TUTTI UGUALI — '+score+'/10';
+      var body='Voto: '+score+'/10\n\nRecensione:\n'+(text||'Solo valutazione.')+'\n\n---\nRecensione inviata da movies.zorix.it';
+      var url='https://github.com/h1collab/tutti-uguali-film/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+      window.open(url,'_blank','noopener,noreferrer');
+    });
+    var avg=document.getElementById('average');
+    var count=document.getElementById('count');
+    var list=document.getElementById('review-list');
+    var api='https://api.github.com/repos/h1collab/tutti-uguali-film/issues?state=all&per_page=100';
+    function display(issues){
+      var votes=[];
+      (issues||[]).forEach(function(issue){
+        if(issue.pull_request)return;
+        var found=issue.title.match(/^\[Recensione\]\s*TUTTI UGUALI\s*[—-]\s*(10|[1-9])\/10$/i);
+        if(found)votes.push({score:Number(found[1]),issue:issue});
+      });
+      if(!votes.length){
+        avg.textContent='—';count.textContent='Ancora nessuna recensione pubblica. Puoi essere il primo!';
+        return;
+      }
+      var total=votes.reduce(function(sum,v){return sum+v.score;},0);
+      avg.textContent=(total/votes.length).toLocaleString('it-IT',{minimumFractionDigits:1,maximumFractionDigits:1});
+      count.textContent=votes.length+' '+(votes.length===1?'recensione pubblica':'recensioni pubbliche')+' · Dati da GitHub';
+      votes.slice(0,5).forEach(function(entry){
+        var issue=entry.issue;
+        var box=document.createElement('article');box.className='review';
+        var head=document.createElement('div');head.className='review-head';
+        var avatar=document.createElement('img');avatar.src=issue.user.avatar_url;avatar.alt='';avatar.loading='lazy';
+        var author=document.createElement('a');author.href=issue.html_url;author.target='_blank';author.rel='noopener noreferrer';author.textContent=issue.user.login;
+        var points=document.createElement('span');points.className='rating-pill';points.textContent=entry.score+'/10';
+        head.append(avatar,author,points);box.appendChild(head);
+        var raw=issue.body||'';
+        var match=raw.match(/Recensione:\s*([\s\S]*?)(?:\n---|$)/i);
+        var message=match?match[1].trim():'';
+        if(message){
+          var p=document.createElement('p');p.textContent=message.slice(0,420);box.appendChild(p);
+        }
+        var when=document.createElement('time');when.dateTime=issue.created_at;when.textContent=new Date(issue.created_at).toLocaleDateString('it-IT');
+        box.appendChild(when);list.appendChild(box);
+      });
+    }
+    async function loadReviews(){
+      try{
+        var cached=null;
+        try{cached=JSON.parse(localStorage.getItem('zorix-reviews-cache-v1')||'null');}catch(e){}
+        if(cached&&Date.now()-cached.time<30*60*1000){display(cached.issues);return;}
+        var resp=await fetch(api,{headers:{'Accept':'application/vnd.github+json'}});
+        if(!resp.ok)throw new Error('GitHub API '+resp.status);
+        var items=await resp.json();
+        display(items);
+        try{localStorage.setItem('zorix-reviews-cache-v1',JSON.stringify({time:Date.now(),issues:items}));}catch(e){}
+      }catch(e){
+        count.textContent='Recensioni temporaneamente non disponibili. Puoi leggerle su GitHub.';
+      }
+    }
+    loadReviews();
+  })();
+  </script>
 </body>
 </html>
