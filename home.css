@@ -15,3 +15,14 @@
 .launch-milestone-dates{font-size:12px!important;color:#bbd0d1!important;line-height:1.6!important;margin:0 0 6px!important}
 .launch-milestone-note{color:#839da4!important;font-size:10px!important;line-height:1.5!important;margin:0!important}
 @media(max-width:570px){.launch-milestone{padding:15px 17px;margin:13px 0 20px}.launch-milestone-count strong{font-size:39px}.launch-milestone-label{font-size:9px;letter-spacing:.09em}}
+
+/* Second film card: wide French-language film poster and editorial rhythm */
+.film-card--carnet{margin-top:26px;border-color:#8fbfd02d;background:linear-gradient(135deg,#183044,#0b1c29)}
+.film-art--carnet{min-height:420px;background:linear-gradient(135deg,#214f6a,#123149);display:flex;align-items:center;justify-content:center}
+.film-art--carnet img{object-position:45% center}
+.film-card--carnet .film-info h3{font-size:clamp(40px,5vw,73px);letter-spacing:-.05em;line-height:1.02}
+.film-card--carnet .italics{color:#badcf0}
+.film-card--carnet .release-label{color:#9edbeb}
+@media(max-width:950px){.film-art--carnet{min-height:350px}}
+@media(max-width:700px){.film-art--carnet{min-height:350px}}
+@media(max-width:540px){.film-art--carnet{min-height:0;aspect-ratio:16/9;max-height:none}.film-art--carnet img{height:100%;position:absolute;object-fit:cover}.film-card--carnet .film-info h3{font-size:49px}}
