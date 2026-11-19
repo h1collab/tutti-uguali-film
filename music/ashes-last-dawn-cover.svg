@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500" role="img" aria-labelledby="title desc">
+<title id="title">Ashes of the Last Dawn — original epic instrumental score</title>
+<desc id="desc">A lone traveler in a crimson cloak faces an apocalyptic city at the final golden sunrise. An abandoned piano lies in the foreground.</desc>
+<defs><linearGradient id="sky" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#08111c"/><stop offset=".47" stop-color="#243344"/><stop offset=".72" stop-color="#873f35"/><stop offset="1" stop-color="#f4ac63"/></linearGradient><radialGradient id="sun"><stop stop-color="#fbe1a7" stop-opacity=".92"/><stop offset=".35" stop-color="#e38d50" stop-opacity=".66"/><stop offset="1" stop-color="#b55143" stop-opacity="0"/></radialGradient><linearGradient id="ground" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#302e32"/><stop offset="1" stop-color="#070a0e"/></linearGradient><linearGradient id="type" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffeac2"/><stop offset=".6" stop-color="#e6b183"/><stop offset="1" stop-color="#c4745e"/></linearGradient><filter id="shadow"><feGaussianBlur stdDeviation="24"/></filter></defs>
+<rect width="1000" height="1500" fill="url(#sky)"/><circle cx="727" cy="1012" r="430" fill="url(#sun)"/>
+<path d="M0 0H1000V650Q801 575 702 650T460 576T212 628T0 552Z" fill="#070c15" opacity=".35"/>
+<path d="M-30 690L66 565 83 630 121 572 146 638 177 552 201 636 235 608 260 658 299 560 332 673 393 595 430 653 486 571 520 670 568 612 618 676 653 595 695 660 735 601 771 648 816 574 855 664 925 608 1020 700V1172H-30Z" fill="#101823" opacity=".6"/>
+<g fill="#13151a"><path d="M0 895V748h40V676h43v105h41V628h61v170h36V714h55V583h33v222h48V695h48V618h72v201h47V657h50v164h41V700h74V562h34v255h58V729h70V613h65v214h53v-95h58v156Z"/><path d="M0 1025v-90h49v-71h53v60h43v-113h44v136h68v-78h38v88h53V833h52v135h83v-105h60v119h44V834h68v148h62v-94h43v90h64V845h44v149h52v-75h44v99h89v-84h46v87Z" opacity=".8"/></g>
+<g fill="#1e1c1e" stroke="#bd664e" stroke-opacity=".3" stroke-width="3"><path d="M646 783l25-55 23 55v144h-48z"/><path d="M696 816v-94l44-31 41 31v94z"/><path d="M784 822v-171h19v171z"/><path d="M822 834V714l38-42 29 42v120z"/><path d="M629 840h300v16H629z"/><path d="M700 767h145v16H700z"/></g>
+<path d="M0 1170L180 1081 260 1106 432 1056 527 1098 733 1031 1000 1100V1500H0Z" fill="url(#ground)"/>
+<path d="M0 1408l198-90 202 36 81-54 149 42 179-117 191 70v205H0Z" fill="#090d12"/>
+<path d="M282 1220l71-12 95 27 17 15-57 18-128-32z" fill="#101317" stroke="#b87c5a" stroke-width="4"/><path d="M316 1206l-4-54 14-9 23 62z" fill="#18191c"/><path d="M335 1210l6-60 21 6-4 59z" fill="#171a1c"/><path d="M335 1221l68-7 51 25-89 16z" fill="#e3d6bb"/><g stroke="#1e2024" stroke-width="5"><path d="M354 1219l9 27m5-28 9 27m5-27 9 28m5-28 9 27m5-27 9 24"/></g>
+<g transform="translate(510 1156)"><path d="M-14 9l-41 145 14 4 47-80 17 78 17-10-25-141Z" fill="#080a0e"/><path d="M-33 13Q-35-85-5-91Q35-81 29 11l-18 41-32-5Z" fill="#11151b"/><path d="M-8-94q-23-28 0-49 29-11 31 16l-12 31z" fill="#111416"/><path d="M-20-66Q-109-67-164-9Q-103-21-62 4Q-85 20-106 41Q-41 24-22 38Z" fill="#8d2f32" stroke="#b65449" stroke-width="4"/><path d="M21-53L58 5l-10 8-44-48" fill="#11181c"/></g>
+<g fill="#e7ad76" opacity=".7"><circle cx="99" cy="1128" r="2"/><circle cx="161" cy="1061" r="3"/><circle cx="235" cy="1118" r="2"/><circle cx="840" cy="1115" r="3"/><circle cx="944" cy="993" r="2"/></g>
+<rect y="0" width="1000" height="510" fill="#060d17" opacity=".45"/>
+<text x="500" y="92" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#e9cbaa" letter-spacing="8" text-anchor="middle">ZORIX ORIGINAL MUSIC</text>
+<text x="500" y="264" font-family="Georgia,serif" font-size="78" fill="url(#type)" text-anchor="middle">ASHES OF THE</text>
+<text x="500" y="377" font-family="Georgia,serif" font-size="112" fill="url(#type)" text-anchor="middle">LAST DAWN</text>
+<path d="M220 408H780" stroke="#d5a782" stroke-width="2" opacity=".8"/>
+<text x="500" y="455" font-family="Arial,sans-serif" font-size="20" letter-spacing="5" fill="#e7d5bd" text-anchor="middle">ORIGINAL EPIC INSTRUMENTAL SCORE</text>
+<text x="500" y="1440" font-family="Georgia,serif" font-size="24" letter-spacing="6" fill="#e9bea1" text-anchor="middle">WHEN EVERYTHING ENDS, HOPE BEGINS</text>
+</svg>
