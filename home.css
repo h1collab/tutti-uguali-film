@@ -65,3 +65,17 @@
 .rift-episode-meta strong{color:#92e9e7;font-weight:850}
 .rift-episode-meta span{border-left:1px solid #b4dbdb46;padding-left:13px}
 @media(max-width:540px){.film-art--rift{height:340px;aspect-ratio:auto;max-height:none}.rift-art-scene{inset:7% 6% 14%}.rift-art-caption strong{font-size:92px}.film-card--rift .film-info h3{font-size:75px}.rift-episode-meta{gap:7px 11px}}
+
+/* ZORIX Music editorial feature */
+.music-section{background:radial-gradient(ellipse at 70% 38%,#68383225,transparent 56%),#0b1118}
+.music-layout{display:grid;grid-template-columns:minmax(210px,34%) 1fr;gap:clamp(28px,7vw,105px);align-items:center}
+.music-art{display:block;border-radius:16px;overflow:hidden;aspect-ratio:2/3;box-shadow:0 25px 80px #000a;border:1px solid #edb58d55;background:#1c2630}
+.music-art img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.music-art:hover img{transform:scale(1.04)}
+.music-copy h2{font:400 clamp(44px,5.5vw,82px)/1.04 Georgia,serif;letter-spacing:-.055em;margin:18px 0 28px}
+.music-copy h2 em{font-style:italic;color:#ebba92}
+.music-kicker{color:#e6b68f!important;font-weight:850;font-size:12px!important;letter-spacing:.18em}
+.music-copy>p:not(.eyebrow):not(.music-kicker):not(.italics){color:#b1c3c8;font-size:15px;line-height:1.88;max-width:620px}
+.music-copy .italics{color:#edd0b9}
+.music-copy .film-tags{margin:24px 0}
+@media(max-width:700px){.music-layout{grid-template-columns:1fr;gap:27px}.music-art{width:min(100%,280px)}.music-copy h2{font-size:53px}.music-copy .movie-actions{margin-top:18px}}
