@@ -38,3 +38,10 @@
 .film-card--arte .release-label{color:#e7d2ab}
 @media(max-width:950px){.film-art--arte{min-height:350px}}
 @media(max-width:540px){.film-art--arte{min-height:0;aspect-ratio:16/9;max-height:none}.film-art--arte img{height:100%;position:absolute}.arte-art-fallback{font-size:37px}.film-card--arte .film-info h3{font-size:48px}}
+
+/* Duration-based classification, November 2026 */
+.category-guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 26px}
+.category-guide>div{border:1px solid #d1c39a39;background:linear-gradient(145deg,#172832,#111a20);border-radius:12px;padding:15px 17px;display:flex;flex-direction:column;gap:5px}
+.category-guide strong{font-size:13px;color:#f3e4c6;line-height:1.5}
+.category-guide span{font-size:11px;color:#a9c0c8;line-height:1.6}
+@media(max-width:650px){.category-guide{grid-template-columns:1fr;gap:8px}.category-guide>div{padding:11px 14px;flex-direction:row;justify-content:space-between;align-items:center}.category-guide strong{font-size:12px}.category-guide span{font-size:10px;text-align:right}}
