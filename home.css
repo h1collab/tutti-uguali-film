@@ -26,3 +26,15 @@
 @media(max-width:950px){.film-art--carnet{min-height:350px}}
 @media(max-width:700px){.film-art--carnet{min-height:350px}}
 @media(max-width:540px){.film-art--carnet{min-height:0;aspect-ratio:16/9;max-height:none}.film-art--carnet img{height:100%;position:absolute;object-fit:cover}.film-card--carnet .film-info h3{font-size:49px}}
+
+/* Renaissance educational cortometraggio card */
+.film-card--arte{margin-top:26px;background:linear-gradient(135deg,#302b22,#111c21);border-color:#ebd2973b}
+.film-art--arte{min-height:420px;background:linear-gradient(150deg,#67523d,#252f29 62%,#122028);display:flex;align-items:center;justify-content:center}
+.film-art--arte img{z-index:1;object-fit:cover;object-position:center}
+.arte-art-fallback{display:block;text-align:center;padding:22px;color:#f0dfbc;font:italic clamp(28px,4vw,55px)/1.05 Georgia,serif;letter-spacing:-.04em}
+.arte-art-fallback small{display:block;margin-top:16px;font:700 10px/1.6 sans-serif;letter-spacing:.13em;color:#e0c896}
+.film-card--arte .film-info h3{font-size:clamp(40px,5vw,74px)}
+.film-card--arte .italics{color:#e7d2ab}
+.film-card--arte .release-label{color:#e7d2ab}
+@media(max-width:950px){.film-art--arte{min-height:350px}}
+@media(max-width:540px){.film-art--arte{min-height:0;aspect-ratio:16/9;max-height:none}.film-art--arte img{height:100%;position:absolute}.arte-art-fallback{font-size:37px}.film-card--arte .film-info h3{font-size:48px}}
