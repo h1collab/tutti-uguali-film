@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081820">
+<meta name="description" content="ZORIX Subject: scegli tra 11 materie e 33 argomenti. Ripassi e lezioni di Arte, Storia, Italiano, Filosofia, Matematica, Scienze e altro.">
+<meta property="og:title" content="SUBJECT — Materie e argomenti | ZORIX">
+<meta property="og:description" content="Dall’Umanesimo e Rinascimento alla matematica: scegli una materia e studia l’argomento che ti interessa.">
+<link rel="canonical" href="https://movies.zorix.it/subject/">
+<link rel="icon" href="../logo.svg" type="image/svg+xml">
+<title>SUBJECT — Materie e argomenti | ZORIX</title>
+<style>
+:root{--bg:#091921;--panel:#11252d;--panel2:#162d35;--ink:#f5f4e9;--muted:#b5c7c6;--mint:#9cddd4;--gold:#eac998;--line:#cde3db2b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}a{color:inherit}button,input{font:inherit}.wrap{width:min(1130px,calc(100% - 42px));margin:0 auto}
+.skip{position:absolute;top:-100px;background:white;color:black;padding:9px;z-index:20}.skip:focus{top:9px}:focus-visible{outline:2px solid var(--mint);outline-offset:4px}
+nav{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:76px}.topbar{background:#091921e9;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5;backdrop-filter:blur(15px)}.brand{display:flex;align-items:center;gap:11px;font-size:15px;font-weight:850;letter-spacing:.14em;text-decoration:none}.brand img{width:39px;height:39px}.brand small{display:block;font-size:10px;color:var(--gold);letter-spacing:.27em}.navlinks{display:flex;flex-wrap:wrap;gap:18px}.navlinks a{font-size:13px;color:#c0d4d1;text-decoration:none;font-weight:650}.navlinks a:hover{color:white}
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 81% 28%,#31545a88,transparent 48%),radial-gradient(ellipse at 20% -5%,#5f462744,transparent 50%),linear-gradient(#142832,#091921)}.hero-grid{min-height:460px;padding:72px 0;display:grid;grid-template-columns:1.3fr .7fr;gap:54px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:var(--gold);font-weight:800}.hero h1{font:400 clamp(64px,9vw,118px)/.92 Georgia,serif;letter-spacing:-.075em;margin:18px 0 22px}.hero h1 em{font-style:normal;color:var(--mint)}.lead{font-size:clamp(16px,1.6vw,19px);color:#d1dfdb;max-width:670px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;min-height:48px;align-items:center;justify-content:center;gap:9px;background:var(--mint);color:#08252b;text-decoration:none;padding:11px 19px;border-radius:9px;font-size:13px;font-weight:850}.btn.outline{background:transparent;border:1px solid #b9d6d27d;color:#eaf1e9}.btn:hover{filter:brightness(1.1)}.diagram{display:grid;place-items:center;min-height:285px;position:relative}.diagram:before,.diagram:after{content:"";position:absolute;border:1px solid #c0e6d957;border-radius:50%;width:255px;height:255px}.diagram:after{width:205px;height:205px;border-style:dashed;transform:rotate(15deg)}.diagram-core{width:140px;height:140px;display:grid;place-items:center;background:linear-gradient(145deg,#a6dfd433,#e8c4941a);border:1px solid #dcf6e077;border-radius:25px;transform:rotate(-8deg);box-shadow:0 22px 70px #0005}.diagram-core span{font:400 80px/1 Georgia,serif;color:#e9d4b0;transform:rotate(8deg)}.orbit{position:absolute;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.15em;color:var(--gold);background:#122931;padding:6px 8px;border:1px solid #cfdbc33b;border-radius:30px}.orbit.one{top:0;left:10%}.orbit.two{bottom:15px;right:0}.orbit.three{top:24%;right:-10px}
+.stats{display:flex;flex-wrap:wrap;gap:25px;margin-top:23px;color:#adbfbe;font-size:12px}.stats strong{color:#f4e7c6;font:400 26px/1 Georgia,serif;margin-right:6px}.section{padding:62px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}.section-title h2{font:400 clamp(36px,4.5vw,58px)/1.05 Georgia,serif;margin:6px 0}.subtle{color:var(--muted);font-size:14px}.feature{display:grid;grid-template-columns:1.25fr .75fr;gap:26px;background:linear-gradient(120deg,#2f3027,#152c2f);border:1px solid #e4cba35a;padding:32px 37px;border-radius:18px;align-items:center}.feature h3{font:400 clamp(29px,4vw,47px)/1.1 Georgia,serif;margin:6px 0 15px}.feature p{color:#d6dcd0;margin-bottom:24px}.feature-visual{display:grid;place-items:center;min-height:210px;position:relative;border:1px solid #e9d7a936;border-radius:11px;background:linear-gradient(150deg,#243c3b,#17282b)}.arches{display:flex;gap:7px;align-items:end;height:160px}.arch{display:block;width:58px;border:6px solid #d5bc8c;border-bottom:0;border-radius:36px 36px 0 0;height:115px;box-shadow:inset 0 0 0 5px #3d5e5a}.arch:nth-child(2){height:150px;width:72px}.arch:nth-child(3){height:115px}.feature-visual small{position:absolute;bottom:12px;right:17px;letter-spacing:.1em;font-size:9px;color:#e3cda5}.panel{border-top:1px solid var(--line);padding-top:52px}.searchbar{display:flex;gap:11px;flex-wrap:wrap;align-items:center;margin-bottom:23px}.searchbox{flex:1;min-width:230px;position:relative}.searchbox input{width:100%;min-height:51px;border-radius:10px;border:1px solid #b5d2cc4f;background:#18313a;color:white;padding:0 17px;outline:none}.searchbox input::placeholder{color:#b3c6c2}.searchbox input:focus{border-color:var(--mint);box-shadow:0 0 0 3px #a2e6da16}.result-count{font-size:12px;color:var(--muted)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}.filter{cursor:pointer;display:inline-flex;align-items:center;gap:7px;color:#e5eeea;background:#162c35;border:1px solid #9ec6bb44;border-radius:30px;padding:9px 12px;font-size:12px;font-weight:740}.filter:hover,.filter[aria-pressed="true"]{background:var(--mint);color:#0a2b2d;border-color:var(--mint)}.filter-mark{font-size:9px;letter-spacing:.09em;background:#f9ffff0e;border:1px solid #ffffff2e;border-radius:5px;padding:1px 4px}.filter[aria-pressed="true"] .filter-mark{background:#0001;border-color:#0002}.filter-count{opacity:.7}.catalogue{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.topic{padding:24px;border:1px solid var(--line);border-radius:13px;background:linear-gradient(147deg,#152b33,#0f222a);min-height:215px;display:flex;flex-direction:column}.topic[hidden]{display:none!important}.topic-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.topic-subject{color:var(--mint);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:850}.topic-no{color:#829a9f;font-size:10px;letter-spacing:.1em}.topic h3{font:400 25px/1.2 Georgia,serif;margin:13px 0 10px}.topic p{font-size:13px;color:#bfd0cb;margin:0 0 19px}.topic-actions,.quick-notes{margin-top:auto}.open-link{color:#f5dcac;text-decoration:underline;text-underline-offset:4px;font-size:13px;font-weight:750}.quick-notes{border-top:1px solid #ffffff23;padding-top:12px}.quick-notes summary{cursor:pointer;color:#e1d2ae;font-size:12px;font-weight:800;display:flex;justify-content:space-between;list-style:none}.quick-notes summary::-webkit-details-marker{display:none}.quick-notes ul{padding-left:18px;color:#cfdfdb;font-size:12px;line-height:1.7}.quick-notes li{margin:8px 0}.empty{display:none;background:#172f37;border-radius:12px;padding:30px;color:#cfdfdb}.bottom-banner{border-top:1px solid var(--line);padding:36px 0 50px;color:#b2c7c3}.bottom-banner a{color:var(--mint)}footer{border-top:1px solid var(--line);padding:23px 0;color:#8da7a7;font-size:12px}.footerrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footerrow a{color:#bdc9c7;text-decoration:none}
+@media(max-width:980px){.catalogue{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-grid{grid-template-columns:1fr .6fr;gap:14px}.diagram:before{width:195px;height:195px}.diagram:after{width:152px;height:152px}.orbit.three{right:0}}
+@media(max-width:680px){.wrap{width:calc(100% - 30px)}nav{min-height:66px}.navlinks{gap:11px}.navlinks a{font-size:11px}.hero-grid{display:block;min-height:0;padding:49px 0}.diagram{display:none}.hero h1{font-size:65px}.feature{grid-template-columns:1fr;padding:25px}.feature-visual{min-height:165px}.arches{transform:scale(.8)}.section{padding:46px 0}.section-title{display:block}.catalogue{grid-template-columns:1fr}.topic{min-height:0}.stats{gap:18px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#materie">Vai ai contenuti</a>
+<header class="topbar"><div class="wrap"><nav aria-label="Navigazione principale"><a class="brand" href="../"><img src="../logo.svg" width="39" height="39" alt=""><span>ZORIX<small>SUBJECT</small></span></a><div class="navlinks"><a href="../">Movies</a><a href="./" aria-current="page">Materie</a><a href="../rift/#guarda-2">RIFT S01E02 ↗</a></div></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<p class="eyebrow">ZORIX LEARNING / IL SAPERE PRENDE FORMA</p>
+<h1>SUB<em>JECT</em></h1>
+<p class="lead">Una materia alla volta, un argomento alla volta. Scegli ciò che vuoi imparare: dall’<strong>Umanesimo e Rinascimento</strong> all’arte, dalla matematica alla storia, dalle lingue alle scienze.</p>
+<div class="hero-actions"><a class="btn" href="#materie">Esplora gli argomenti ↗</a><a class="btn outline" href="./arte/umanesimo-rinascimento/">Inizia da Arte</a></div>
+<div class="stats"><span><strong>11</strong> materie</span><span><strong>33</strong> schede introduttive</span><span><strong>1</strong> lezione completa</span></div>
+</div><div class="diagram" aria-hidden="true"><div class="diagram-core"><span>S</span></div><span class="orbit one">ARTE</span><span class="orbit two">SCIENZE</span><span class="orbit three">STORIA</span></div></div></section>
+<section class="section"><div class="wrap">
+<div class="section-title"><div><p class="eyebrow">IN EVIDENZA / ARTE</p><h2>Il primo approfondimento</h2></div><p class="subtle">Un percorso di studio con esempi e quiz.</p></div>
+<article class="feature"><div><p class="eyebrow">ARTE · QUATTROCENTO E CINQUECENTO</p><h3>Umanesimo e Rinascimento</h3><p>Che cosa cambia quando l’uomo, la natura e l’antichità classica tornano al centro dell’arte? Scopri la prospettiva, Firenze, i grandi artisti e le opere fondamentali.</p><a class="btn" href="./arte/umanesimo-rinascimento/">Studia l’argomento ↗</a></div><div class="feature-visual" aria-hidden="true"><div class="arches"><span class="arch"></span><span class="arch"></span><span class="arch"></span></div><small>FIRENZE · XV–XVI SEC.</small></div></article>
+</div></section>
+<section class="section panel" id="materie"><div class="wrap">
+<div class="section-title"><div><p class="eyebrow">IL CATALOGO</p><h2>Materie e argomenti</h2></div><p class="subtle">Filtra per materia o cerca una parola.</p></div>
+<div class="searchbar"><label for="search" class="searchbox"><input type="search" id="search" placeholder="Cerca: prospettiva, Dante, cellula, Newton..." autocomplete="off" aria-label="Cerca argomenti"></label><span id="count" class="result-count" aria-live="polite">33 argomenti</span></div>
+<div class="filters" role="group" aria-label="Filtra per materia"><button class="filter" type="button" data-filter="all" aria-pressed="true">Tutte le materie <span class="filter-count">33</span></button>
+<button class="filter" data-filter="arte" type="button" aria-pressed="false"><span class="filter-mark">AR</span>Arte<span class="filter-count">4</span></button>
+<button class="filter" data-filter="storia" type="button" aria-pressed="false"><span class="filter-mark">ST</span>Storia<span class="filter-count">3</span></button>
+<button class="filter" data-filter="italiano" type="button" aria-pressed="false"><span class="filter-mark">IT</span>Italiano<span class="filter-count">3</span></button>
+<button class="filter" data-filter="filosofia" type="button" aria-pressed="false"><span class="filter-mark">FI</span>Filosofia<span class="filter-count">3</span></button>
+<button class="filter" data-filter="matematica" type="button" aria-pressed="false"><span class="filter-mark">MA</span>Matematica<span class="filter-count">3</span></button>
+<button class="filter" data-filter="scienze" type="button" aria-pressed="false"><span class="filter-mark">SC</span>Scienze<span class="filter-count">3</span></button>
+<button class="filter" data-filter="fisica" type="button" aria-pressed="false"><span class="filter-mark">FS</span>Fisica<span class="filter-count">3</span></button>
+<button class="filter" data-filter="geografia" type="button" aria-pressed="false"><span class="filter-mark">GE</span>Geografia<span class="filter-count">3</span></button>
+<button class="filter" data-filter="inglese" type="button" aria-pressed="false"><span class="filter-mark">EN</span>Inglese<span class="filter-count">3</span></button>
+<button class="filter" data-filter="tecnologia" type="button" aria-pressed="false"><span class="filter-mark">TE</span>Tecnologia<span class="filter-count">3</span></button>
+<button class="filter" data-filter="francese" type="button" aria-pressed="false"><span class="filter-mark">FR</span>Francese<span class="filter-count">2</span></button>
+</div>
+<div class="catalogue" id="topics"><article class="topic" data-subject="arte" data-search="arte umanesimo e rinascimento dall’umanesimo alla rivoluzione dell’arte tra quattrocento e cinquecento. l’umanesimo valorizza lo studio dei classici e la capacità critica dell’essere umano. il rinascimento sviluppa nuove forme artistiche: prospettiva, studio della natura e dialogo con l’antichità. a firenze lavorano brunelleschi, donatello e masaccio; poi leonardo, michelangelo e raffaello.">
+<div class="topic-top"><span class="topic-subject">Arte</span><span class="topic-no">AR / 01</span></div>
+<h3>Umanesimo e Rinascimento</h3><p>Dall’Umanesimo alla rivoluzione dell’arte tra Quattrocento e Cinquecento.</p>
+<div class="topic-actions"><a class="open-link" href="./arte/umanesimo-rinascimento/">Apri la lezione completa <span aria-hidden="true">↗</span></a></div>
+</article>
+<article class="topic" data-subject="arte" data-search="arte la prospettiva lineare come dare profondità a una superficie piatta. le linee parallele rappresentate possono convergere verso uno o più punti di fuga. la linea dell’orizzonte coincide con l’altezza dello sguardo dell’osservatore. brunelleschi sperimenta la prospettiva; masaccio la applica in pittura.">
+<div class="topic-top"><span class="topic-subject">Arte</span><span class="topic-no">AR / 02</span></div>
+<h3>La prospettiva lineare</h3><p>Come dare profondità a una superficie piatta.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Le linee parallele rappresentate possono convergere verso uno o più punti di fuga.</li><li>La linea dell’orizzonte coincide con l’altezza dello sguardo dell’osservatore.</li><li>Brunelleschi sperimenta la prospettiva; Masaccio la applica in pittura.</li></ul></details>
+</article>
+<article class="topic" data-subject="arte" data-search="arte leonardo da vinci arte, osservazione e sperimentazione. leonardo unisce pittura, studio del corpo, macchine e osservazione della natura. lo sfumato crea passaggi delicati tra luce e ombra. fra le opere celebri ci sono la gioconda e l’ultima cena.">
+<div class="topic-top"><span class="topic-subject">Arte</span><span class="topic-no">AR / 03</span></div>
+<h3>Leonardo da Vinci</h3><p>Arte, osservazione e sperimentazione.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Leonardo unisce pittura, studio del corpo, macchine e osservazione della natura.</li><li>Lo sfumato crea passaggi delicati tra luce e ombra.</li><li>Fra le opere celebri ci sono la Gioconda e l’Ultima Cena.</li></ul></details>
+</article>
+<article class="topic" data-subject="arte" data-search="arte il barocco dinamismo e teatralità nell’arte del seicento. il barocco si sviluppa soprattutto nel seicento, con forme dinamiche e coinvolgimento emotivo. caravaggio usa forti contrasti luminosi; bernini unisce scultura e movimento. la diffusione europea presenta stili e interpretazioni diverse.">
+<div class="topic-top"><span class="topic-subject">Arte</span><span class="topic-no">AR / 04</span></div>
+<h3>Il Barocco</h3><p>Dinamismo e teatralità nell’arte del Seicento.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il Barocco si sviluppa soprattutto nel Seicento, con forme dinamiche e coinvolgimento emotivo.</li><li>Caravaggio usa forti contrasti luminosi; Bernini unisce scultura e movimento.</li><li>La diffusione europea presenta stili e interpretazioni diverse.</li></ul></details>
+</article>
+<article class="topic" data-subject="storia" data-search="storia il medioevo una lunga epoca di cambiamenti. per convenzione la storia europea colloca il medioevo tra il v e il xv secolo. non è un periodo uniforme: cambiano città, commerci, istituzioni e culture. tra i fenomeni centrali figurano il feudalesimo e la crescita delle città medievali.">
+<div class="topic-top"><span class="topic-subject">Storia</span><span class="topic-no">ST / 01</span></div>
+<h3>Il Medioevo</h3><p>Una lunga epoca di cambiamenti.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Per convenzione la storia europea colloca il Medioevo tra il V e il XV secolo.</li><li>Non è un periodo uniforme: cambiano città, commerci, istituzioni e culture.</li><li>Tra i fenomeni centrali figurano il feudalesimo e la crescita delle città medievali.</li></ul></details>
+</article>
+<article class="topic" data-subject="storia" data-search="storia rivoluzione francese 1789 e la trasformazione dell’ordine politico. nel 1789 la crisi della monarchia francese sfocia nella rivoluzione. la dichiarazione dei diritti dell’uomo e del cittadino afferma nuovi principi politici. il processo attraversa fasi molto diverse e non si conclude nel 1789.">
+<div class="topic-top"><span class="topic-subject">Storia</span><span class="topic-no">ST / 02</span></div>
+<h3>Rivoluzione francese</h3><p>1789 e la trasformazione dell’ordine politico.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Nel 1789 la crisi della monarchia francese sfocia nella rivoluzione.</li><li>La Dichiarazione dei diritti dell’uomo e del cittadino afferma nuovi principi politici.</li><li>Il processo attraversa fasi molto diverse e non si conclude nel 1789.</li></ul></details>
+</article>
+<article class="topic" data-subject="storia" data-search="storia prima guerra mondiale le origini e le conseguenze del conflitto. la guerra coinvolge numerosi paesi tra il 1914 e il 1918. alleanze, nazionalismi e tensioni precedenti contribuirono alla crisi. il conflitto cambiò profondamente la geografia politica europea.">
+<div class="topic-top"><span class="topic-subject">Storia</span><span class="topic-no">ST / 03</span></div>
+<h3>Prima guerra mondiale</h3><p>Le origini e le conseguenze del conflitto.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La guerra coinvolge numerosi paesi tra il 1914 e il 1918.</li><li>Alleanze, nazionalismi e tensioni precedenti contribuirono alla crisi.</li><li>Il conflitto cambiò profondamente la geografia politica europea.</li></ul></details>
+</article>
+<article class="topic" data-subject="italiano" data-search="italiano dante e la divina commedia il viaggio poetico nell’aldilà. la commedia è articolata in inferno, purgatorio e paradiso. il viaggio del protagonista affronta questioni morali, politiche e spirituali. dante è una figura fondamentale nella storia della lingua e della letteratura italiana.">
+<div class="topic-top"><span class="topic-subject">Italiano</span><span class="topic-no">IT / 01</span></div>
+<h3>Dante e la Divina Commedia</h3><p>Il viaggio poetico nell’aldilà.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La Commedia è articolata in Inferno, Purgatorio e Paradiso.</li><li>Il viaggio del protagonista affronta questioni morali, politiche e spirituali.</li><li>Dante è una figura fondamentale nella storia della lingua e della letteratura italiana.</li></ul></details>
+</article>
+<article class="topic" data-subject="italiano" data-search="italiano il romanticismo sentimento, storia e identità. il romanticismo europeo valorizza sentimento, immaginazione e storia. in italia assume forme specifiche legate anche al dibattito culturale e nazionale. manzoni è un autore centrale del romanticismo italiano.">
+<div class="topic-top"><span class="topic-subject">Italiano</span><span class="topic-no">IT / 02</span></div>
+<h3>Il Romanticismo</h3><p>Sentimento, storia e identità.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il Romanticismo europeo valorizza sentimento, immaginazione e storia.</li><li>In Italia assume forme specifiche legate anche al dibattito culturale e nazionale.</li><li>Manzoni è un autore centrale del Romanticismo italiano.</li></ul></details>
+</article>
+<article class="topic" data-subject="italiano" data-search="italiano il verismo raccontare realtà e società. il verismo italiano si sviluppa soprattutto nell’ottocento. la narrazione osserva ambienti sociali e condizioni di vita con attenzione al contesto. giovanni verga è tra gli autori più importanti.">
+<div class="topic-top"><span class="topic-subject">Italiano</span><span class="topic-no">IT / 03</span></div>
+<h3>Il Verismo</h3><p>Raccontare realtà e società.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il Verismo italiano si sviluppa soprattutto nell’Ottocento.</li><li>La narrazione osserva ambienti sociali e condizioni di vita con attenzione al contesto.</li><li>Giovanni Verga è tra gli autori più importanti.</li></ul></details>
+</article>
+<article class="topic" data-subject="filosofia" data-search="filosofia socrate e il dialogo imparare attraverso le domande. socrate è noto soprattutto attraverso le opere di autori come platone. il dialogo socratico mette alla prova opinioni e definizioni. il suo metodo invita a riconoscere ciò che non si sa.">
+<div class="topic-top"><span class="topic-subject">Filosofia</span><span class="topic-no">FI / 01</span></div>
+<h3>Socrate e il dialogo</h3><p>Imparare attraverso le domande.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Socrate è noto soprattutto attraverso le opere di autori come Platone.</li><li>Il dialogo socratico mette alla prova opinioni e definizioni.</li><li>Il suo metodo invita a riconoscere ciò che non si sa.</li></ul></details>
+</article>
+<article class="topic" data-subject="filosofia" data-search="filosofia l’umanesimo nella cultura dignità, studio e centralità dell’essere umano. gli umanisti riscoprono e studiano criticamente testi greci e latini. la formazione attraverso le studia humanitatis acquista importanza. la valorizzazione dell’essere umano non implica necessariamente il rifiuto della fede.">
+<div class="topic-top"><span class="topic-subject">Filosofia</span><span class="topic-no">FI / 02</span></div>
+<h3>L’Umanesimo nella cultura</h3><p>Dignità, studio e centralità dell’essere umano.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Gli umanisti riscoprono e studiano criticamente testi greci e latini.</li><li>La formazione attraverso le studia humanitatis acquista importanza.</li><li>La valorizzazione dell’essere umano non implica necessariamente il rifiuto della fede.</li></ul></details>
+</article>
+<article class="topic" data-subject="filosofia" data-search="filosofia l’illuminismo ragione e critica nel settecento. gli illuministi attribuiscono grande valore alla discussione pubblica e alla ragione. si interrogano su educazione, diritti e organizzazione della società. le idee illuministe sono molteplici e talvolta in disaccordo tra loro.">
+<div class="topic-top"><span class="topic-subject">Filosofia</span><span class="topic-no">FI / 03</span></div>
+<h3>L’Illuminismo</h3><p>Ragione e critica nel Settecento.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Gli illuministi attribuiscono grande valore alla discussione pubblica e alla ragione.</li><li>Si interrogano su educazione, diritti e organizzazione della società.</li><li>Le idee illuministe sono molteplici e talvolta in disaccordo tra loro.</li></ul></details>
+</article>
+<article class="topic" data-subject="matematica" data-search="matematica equazioni di primo grado trovare l’incognita passo dopo passo. un’equazione è un’uguaglianza che contiene una o più incognite. per risolvere 2x + 3 = 11, si sottrae 3 e poi si divide per 2: x = 4. ogni passaggio deve preservare l’equivalenza dell’uguaglianza.">
+<div class="topic-top"><span class="topic-subject">Matematica</span><span class="topic-no">MA / 01</span></div>
+<h3>Equazioni di primo grado</h3><p>Trovare l’incognita passo dopo passo.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Un’equazione è un’uguaglianza che contiene una o più incognite.</li><li>Per risolvere 2x + 3 = 11, si sottrae 3 e poi si divide per 2: x = 4.</li><li>Ogni passaggio deve preservare l’equivalenza dell’uguaglianza.</li></ul></details>
+</article>
+<article class="topic" data-subject="matematica" data-search="matematica percentuali confrontare quantità rispetto a cento. il 25% equivale a 25 su 100, cioè 0,25. per trovare il 20% di 150 si calcola 150 × 0,20 = 30. per confrontare aumenti e sconti è importante identificare la base di riferimento.">
+<div class="topic-top"><span class="topic-subject">Matematica</span><span class="topic-no">MA / 02</span></div>
+<h3>Percentuali</h3><p>Confrontare quantità rispetto a cento.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il 25% equivale a 25 su 100, cioè 0,25.</li><li>Per trovare il 20% di 150 si calcola 150 × 0,20 = 30.</li><li>Per confrontare aumenti e sconti è importante identificare la base di riferimento.</li></ul></details>
+</article>
+<article class="topic" data-subject="matematica" data-search="matematica le funzioni relazioni tra variabili. una funzione associa a ogni valore ammesso di x un solo valore di y. nella funzione y = 2x, se x = 3 allora y = 6. tabelle e grafici aiutano a visualizzare l’andamento.">
+<div class="topic-top"><span class="topic-subject">Matematica</span><span class="topic-no">MA / 03</span></div>
+<h3>Le funzioni</h3><p>Relazioni tra variabili.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Una funzione associa a ogni valore ammesso di x un solo valore di y.</li><li>Nella funzione y = 2x, se x = 3 allora y = 6.</li><li>Tabelle e grafici aiutano a visualizzare l’andamento.</li></ul></details>
+</article>
+<article class="topic" data-subject="scienze" data-search="scienze la cellula l’unità fondamentale degli esseri viventi. la cellula è l’unità di base della struttura e delle funzioni degli esseri viventi. le cellule eucariotiche possiedono un nucleo delimitato da membrana. le cellule vegetali hanno, fra le altre strutture, parete cellulare e cloroplasti.">
+<div class="topic-top"><span class="topic-subject">Scienze</span><span class="topic-no">SC / 01</span></div>
+<h3>La cellula</h3><p>L’unità fondamentale degli esseri viventi.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La cellula è l’unità di base della struttura e delle funzioni degli esseri viventi.</li><li>Le cellule eucariotiche possiedono un nucleo delimitato da membrana.</li><li>Le cellule vegetali hanno, fra le altre strutture, parete cellulare e cloroplasti.</li></ul></details>
+</article>
+<article class="topic" data-subject="scienze" data-search="scienze dna e geni come si conserva l’informazione biologica. il dna contiene informazioni ereditarie codificate nella sequenza delle basi. un gene è una regione del dna associata a un prodotto funzionale. l’espressione genica contribuisce al funzionamento delle cellule.">
+<div class="topic-top"><span class="topic-subject">Scienze</span><span class="topic-no">SC / 02</span></div>
+<h3>DNA e geni</h3><p>Come si conserva l’informazione biologica.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il DNA contiene informazioni ereditarie codificate nella sequenza delle basi.</li><li>Un gene è una regione del DNA associata a un prodotto funzionale.</li><li>L’espressione genica contribuisce al funzionamento delle cellule.</li></ul></details>
+</article>
+<article class="topic" data-subject="scienze" data-search="scienze la fotosintesi come le piante trasformano l’energia luminosa. la fotosintesi usa energia luminosa per produrre sostanze organiche. nelle piante avviene principalmente nei cloroplasti. la produzione di ossigeno è legata alla fase luminosa della fotosintesi.">
+<div class="topic-top"><span class="topic-subject">Scienze</span><span class="topic-no">SC / 03</span></div>
+<h3>La fotosintesi</h3><p>Come le piante trasformano l’energia luminosa.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La fotosintesi usa energia luminosa per produrre sostanze organiche.</li><li>Nelle piante avviene principalmente nei cloroplasti.</li><li>La produzione di ossigeno è legata alla fase luminosa della fotosintesi.</li></ul></details>
+</article>
+<article class="topic" data-subject="fisica" data-search="fisica moto rettilineo uniforme velocità costante nel tempo. nel moto rettilineo uniforme la velocità resta costante. la relazione fra spazio percorso e intervallo di tempo è s = v × t. le unità devono essere coerenti, per esempio metri e secondi.">
+<div class="topic-top"><span class="topic-subject">Fisica</span><span class="topic-no">FS / 01</span></div>
+<h3>Moto rettilineo uniforme</h3><p>Velocità costante nel tempo.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Nel moto rettilineo uniforme la velocità resta costante.</li><li>La relazione fra spazio percorso e intervallo di tempo è s = v × t.</li><li>Le unità devono essere coerenti, per esempio metri e secondi.</li></ul></details>
+</article>
+<article class="topic" data-subject="fisica" data-search="fisica le leggi di newton come agiscono le forze. la prima legge descrive il principio d’inerzia. la seconda legge, in condizioni classiche, è espressa da f = m × a. la terza descrive coppie di forze uguali e opposte su corpi diversi.">
+<div class="topic-top"><span class="topic-subject">Fisica</span><span class="topic-no">FS / 02</span></div>
+<h3>Le leggi di Newton</h3><p>Come agiscono le forze.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La prima legge descrive il principio d’inerzia.</li><li>La seconda legge, in condizioni classiche, è espressa da F = m × a.</li><li>La terza descrive coppie di forze uguali e opposte su corpi diversi.</li></ul></details>
+</article>
+<article class="topic" data-subject="fisica" data-search="fisica l’energia trasformazioni e conservazione. l’energia può presentarsi in forme diverse, per esempio cinetica e potenziale. in un sistema isolato l’energia totale si conserva. l’attrito può trasformare energia meccanica in energia interna.">
+<div class="topic-top"><span class="topic-subject">Fisica</span><span class="topic-no">FS / 03</span></div>
+<h3>L’energia</h3><p>Trasformazioni e conservazione.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>L’energia può presentarsi in forme diverse, per esempio cinetica e potenziale.</li><li>In un sistema isolato l’energia totale si conserva.</li><li>L’attrito può trasformare energia meccanica in energia interna.</li></ul></details>
+</article>
+<article class="topic" data-subject="geografia" data-search="geografia i climi della terra perché il clima cambia da luogo a luogo. il clima descrive condizioni atmosferiche osservate su periodi lunghi. latitudine, altitudine e vicinanza al mare influenzano le condizioni climatiche. il tempo meteorologico indica invece le condizioni di breve periodo.">
+<div class="topic-top"><span class="topic-subject">Geografia</span><span class="topic-no">GE / 01</span></div>
+<h3>I climi della Terra</h3><p>Perché il clima cambia da luogo a luogo.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il clima descrive condizioni atmosferiche osservate su periodi lunghi.</li><li>Latitudine, altitudine e vicinanza al mare influenzano le condizioni climatiche.</li><li>Il tempo meteorologico indica invece le condizioni di breve periodo.</li></ul></details>
+</article>
+<article class="topic" data-subject="geografia" data-search="geografia la globalizzazione connessioni economiche e culturali. la globalizzazione intensifica relazioni tra territori e società. riguarda scambi di beni, informazioni, persone e idee. i suoi effetti possono essere diversi a seconda dei luoghi e dei gruppi sociali.">
+<div class="topic-top"><span class="topic-subject">Geografia</span><span class="topic-no">GE / 02</span></div>
+<h3>La globalizzazione</h3><p>Connessioni economiche e culturali.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>La globalizzazione intensifica relazioni tra territori e società.</li><li>Riguarda scambi di beni, informazioni, persone e idee.</li><li>I suoi effetti possono essere diversi a seconda dei luoghi e dei gruppi sociali.</li></ul></details>
+</article>
+<article class="topic" data-subject="geografia" data-search="geografia l’unione europea istituzioni e cooperazione. l’unione europea è un’organizzazione politica ed economica sovranazionale. la commissione, il parlamento e il consiglio dell’ue hanno ruoli distinti. non tutti gli stati europei fanno parte dell’unione.">
+<div class="topic-top"><span class="topic-subject">Geografia</span><span class="topic-no">GE / 03</span></div>
+<h3>L’Unione europea</h3><p>Istituzioni e cooperazione.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>L’Unione europea è un’organizzazione politica ed economica sovranazionale.</li><li>La Commissione, il Parlamento e il Consiglio dell’UE hanno ruoli distinti.</li><li>Non tutti gli Stati europei fanno parte dell’Unione.</li></ul></details>
+</article>
+<article class="topic" data-subject="inglese" data-search="inglese present simple abitudini e fatti generali. si usa spesso per abitudini e situazioni generali: i study every day. alla terza persona singolare molti verbi aggiungono -s: she studies. per le domande si usano spesso do o does.">
+<div class="topic-top"><span class="topic-subject">Inglese</span><span class="topic-no">EN / 01</span></div>
+<h3>Present simple</h3><p>Abitudini e fatti generali.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Si usa spesso per abitudini e situazioni generali: I study every day.</li><li>Alla terza persona singolare molti verbi aggiungono -s: she studies.</li><li>Per le domande si usano spesso do o does.</li></ul></details>
+</article>
+<article class="topic" data-subject="inglese" data-search="inglese past simple azioni concluse nel passato. il past simple indica normalmente eventi conclusi nel passato. i verbi regolari assumono spesso -ed; molti verbi sono irregolari. esempio: we visited rome last year.">
+<div class="topic-top"><span class="topic-subject">Inglese</span><span class="topic-no">EN / 02</span></div>
+<h3>Past simple</h3><p>Azioni concluse nel passato.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il past simple indica normalmente eventi conclusi nel passato.</li><li>I verbi regolari assumono spesso -ed; molti verbi sono irregolari.</li><li>Esempio: We visited Rome last year.</li></ul></details>
+</article>
+<article class="topic" data-subject="inglese" data-search="inglese present perfect esperienze e collegamenti con il presente. si forma con have o has + participio passato. esempio: i have finished my homework. il suo uso si distingue da quello del past simple in base al contesto.">
+<div class="topic-top"><span class="topic-subject">Inglese</span><span class="topic-no">EN / 03</span></div>
+<h3>Present perfect</h3><p>Esperienze e collegamenti con il presente.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Si forma con have o has + participio passato.</li><li>Esempio: I have finished my homework.</li><li>Il suo uso si distingue da quello del past simple in base al contesto.</li></ul></details>
+</article>
+<article class="topic" data-subject="tecnologia" data-search="tecnologia intelligenza artificiale capire cosa possono fare i sistemi di ia. i sistemi di ia possono individuare regolarità nei dati e generare contenuti. una risposta convincente non è sempre una risposta corretta. è importante verificare le fonti e proteggere i dati personali.">
+<div class="topic-top"><span class="topic-subject">Tecnologia</span><span class="topic-no">TE / 01</span></div>
+<h3>Intelligenza artificiale</h3><p>Capire cosa possono fare i sistemi di IA.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>I sistemi di IA possono individuare regolarità nei dati e generare contenuti.</li><li>Una risposta convincente non è sempre una risposta corretta.</li><li>È importante verificare le fonti e proteggere i dati personali.</li></ul></details>
+</article>
+<article class="topic" data-subject="tecnologia" data-search="tecnologia sicurezza digitale proteggere account e informazioni. password lunghe e uniche aiutano a proteggere gli account. l’autenticazione a più fattori aggiunge una barriera di sicurezza. messaggi urgenti o link inattesi possono essere tentativi di phishing.">
+<div class="topic-top"><span class="topic-subject">Tecnologia</span><span class="topic-no">TE / 02</span></div>
+<h3>Sicurezza digitale</h3><p>Proteggere account e informazioni.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Password lunghe e uniche aiutano a proteggere gli account.</li><li>L’autenticazione a più fattori aggiunge una barriera di sicurezza.</li><li>Messaggi urgenti o link inattesi possono essere tentativi di phishing.</li></ul></details>
+</article>
+<article class="topic" data-subject="tecnologia" data-search="tecnologia internet e reti come comunicano i dispositivi. una rete permette a dispositivi diversi di scambiare dati. internet è una rete globale di reti interconnesse. il browser e il server comunicano usando protocolli come https.">
+<div class="topic-top"><span class="topic-subject">Tecnologia</span><span class="topic-no">TE / 03</span></div>
+<h3>Internet e reti</h3><p>Come comunicano i dispositivi.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Una rete permette a dispositivi diversi di scambiare dati.</li><li>Internet è una rete globale di reti interconnesse.</li><li>Il browser e il server comunicano usando protocolli come HTTPS.</li></ul></details>
+</article>
+<article class="topic" data-subject="francese" data-search="francese le présent de l’indicatif parlare di azioni abituali e attuali. il présent può descrivere abitudini o azioni in corso. esempio: je parle français; nous parlons français. le coniugazioni cambiano secondo il verbo e la persona.">
+<div class="topic-top"><span class="topic-subject">Francese</span><span class="topic-no">FR / 01</span></div>
+<h3>Le présent de l’indicatif</h3><p>Parlare di azioni abituali e attuali.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Il présent può descrivere abitudini o azioni in corso.</li><li>Esempio: Je parle français; nous parlons français.</li><li>Le coniugazioni cambiano secondo il verbo e la persona.</li></ul></details>
+</article>
+<article class="topic" data-subject="francese" data-search="francese le passé composé raccontare eventi passati. si forma generalmente con avoir o être + participio passato. esempio: j’ai étudié; elle est partie. con alcuni verbi si applicano regole specifiche di accordo del participio.">
+<div class="topic-top"><span class="topic-subject">Francese</span><span class="topic-no">FR / 02</span></div>
+<h3>Le passé composé</h3><p>Raccontare eventi passati.</p>
+<details class="quick-notes"><summary>Scheda rapida <span aria-hidden="true">+</span></summary><ul><li>Si forma generalmente con avoir o être + participio passato.</li><li>Esempio: J’ai étudié; elle est partie.</li><li>Con alcuni verbi si applicano regole specifiche di accordo del participio.</li></ul></details>
+</article></div>
+<p id="empty" class="empty" role="status">Nessun argomento trovato. Prova un’altra materia o una parola diversa.</p>
+</div></section>
+<section class="bottom-banner"><div class="wrap"><p><strong>Come funziona:</strong> apri una “Scheda rapida” per ripassare i concetti essenziali. Gli approfondimenti completi, come <a href="./arte/umanesimo-rinascimento/">Umanesimo e Rinascimento</a>, includono spiegazioni, esempi, domande e collegamenti ai film ZORIX.</p></div></section>
+</main>
+<footer><div class="wrap footerrow"><span>© 2026 ZORIX · SUBJECT · Cultura e apprendimento</span><span><a href="../">ZORIX Movies</a> · <a href="../music/">Music</a> · <a href="../l-uomo-al-centro/">L’Uomo al Centro</a></span></div></footer>
+<script>
+(function(){
+ const filters=Array.from(document.querySelectorAll("[data-filter]"));
+ const cards=Array.from(document.querySelectorAll(".topic"));
+ const input=document.getElementById("search");
+ const count=document.getElementById("count");
+ const empty=document.getElementById("empty");
+ const valid=new Set(filters.map(x=>x.dataset.filter));
+ const params=new URLSearchParams(location.search);
+ let selected=valid.has(params.get("materia"))?params.get("materia"):"all";
+ function norm(s){return (s||"").toLocaleLowerCase("it").normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim()}
+ function apply(){
+  const q=norm(input.value);let found=0;
+  cards.forEach(card=>{
+   const visible=(selected==="all"||card.dataset.subject===selected)&&norm(card.dataset.search).includes(q);
+   card.hidden=!visible;if(visible)found++;
+  });
+  filters.forEach(f=>f.setAttribute("aria-pressed",String(f.dataset.filter===selected)));
+  count.textContent=found+" argoment"+(found===1?"o":"i");
+  empty.style.display=found?"none":"block";
+ }
+ filters.forEach(f=>f.addEventListener("click",()=>{
+  selected=f.dataset.filter;const p=new URLSearchParams(location.search);
+  if(selected==="all")p.delete("materia");else p.set("materia",selected);
+  const qs=p.toString();history.replaceState(null,"",location.pathname+(qs?"?"+qs:"")+location.hash);
+  apply();
+ }));
+ input.addEventListener("input",apply);apply();
+})();
+</script>
+</body></html>
