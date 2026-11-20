@@ -18,7 +18,7 @@
 :root{color-scheme:dark;--bg:#071018;--ink:#f2f7f6;--muted:#a5b7c0;--cyan:#8bedea;--amber:#e4b881;--line:#ffffff26}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--ink);font:400 15px/1.75 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
 a{color:inherit}.wrap{width:min(100% - 40px,1120px);margin-inline:auto}.skip{position:absolute;top:-100px;left:15px;background:white;color:#111;padding:12px;z-index:20}.skip:focus{top:15px}:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
-header{position:sticky;top:0;z-index:5;background:#07121aec;border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:18px;font-weight:900;letter-spacing:.18em;line-height:1}.brand img{width:43px;height:43px}.brand small{display:block;color:#a2b6be;font-size:9px;margin-top:7px}.back{font-size:12px;text-decoration:none;color:#b6d8dc;font-weight:750}.back:hover,.footer a:hover{color:white}
+header{position:sticky;top:0;z-index:5;background:#07121aec;border-bottom:1px solid var(--line);backdrop-filter:blur(15px)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-size:18px;font-weight:900;letter-spacing:.18em;line-height:1}.brand img{width:43px;height:43px}.brand small{display:block;color:#a2b6be;font-size:9px;margin-top:7px}.back{font-size:12px;text-decoration:none;color:#b6d8dc;font-weight:750}.navlinks{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.navlinks a{font-size:12px;text-decoration:none;color:#b6d8dc;font-weight:750}.navlinks a:hover{color:white}.back:hover,.footer a:hover{color:white}
 .hero{background:radial-gradient(ellipse 50% 60% at 72% 36%,#194153aa,transparent),radial-gradient(ellipse at 20% 10%,#47322055,transparent),linear-gradient(180deg,#101b26,var(--bg));border-bottom:1px solid var(--line)}
 .hero-grid{padding:65px 0 76px;display:grid;grid-template-columns:1fr minmax(320px,45%);gap:52px;align-items:center}
 .eyebrow{margin:0 0 12px;color:var(--cyan);letter-spacing:.18em;font-size:11px;font-weight:850;text-transform:uppercase}.hero h1{font:400 clamp(80px,12vw,154px)/.9 Georgia,serif;letter-spacing:-.095em;margin:15px 0 9px}.subtitle{font-size:clamp(18px,3vw,28px);letter-spacing:.26em;text-transform:uppercase;color:#e6c19a;font-weight:700;margin:0 0 25px}.tagline{font:italic clamp(20px,2.3vw,29px)/1.4 Georgia,serif;color:#dbe7e6}.description{font-size:15px;color:#bed0d2;max-width:575px;line-height:1.88}.tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0}.tags span{font-size:11px;border:1px solid #ffffff37;border-radius:40px;padding:7px 11px;color:#d7e5e7;background:#ffffff09}
@@ -46,7 +46,7 @@ header{position:sticky;top:0;z-index:5;background:#07121aec;border-bottom:1px so
 </head>
 <body>
 <a class="skip" href="#main">Vai al contenuto</a>
-<header><div class="wrap nav"><a class="brand" href="../" aria-label="ZORIX Movies"><img src="../logo.svg" alt="" width="43" height="43"><span>ZORIX<small>MOVIES</small></span></a><a class="back" href="../#film">← Tutti i film e le serie</a></div></header>
+<header><div class="wrap nav"><a class="brand" href="../" aria-label="ZORIX Movies"><img src="../logo.svg" alt="" width="43" height="43"><span>ZORIX<small>MOVIES</small></span></a><div class="navlinks"><a href="../subject/">Subject · Materie</a><a class="back" href="../#film">← Film e serie</a></div></div></header>
 <main id="main">
 <section class="hero"><div class="wrap hero-grid">
 <div>
@@ -82,11 +82,17 @@ header{position:sticky;top:0;z-index:5;background:#07121aec;border-bottom:1px so
 </div>
 <aside class="side-card"><h3>Stato della stagione</h3><p><strong>Stagione 1</strong></p><p><strong>2 episodi disponibili</strong> al momento.</p><p>Gli episodi 1 e 2 della prima stagione sono disponibili gratuitamente.</p></aside>
 </div></div></section>
+<section class="section" id="studio"><div class="wrap">
+<p class="label">ZORIX SUBJECT · IMPARA E APPROFONDISCI</p>
+<h2>Scopri anche Subject</h2>
+<p style="color:#bdcfd0;max-width:720px">Dalla fantascienza alle idee che hanno cambiato la storia: esplora 11 materie e 33 argomenti. Inizia dalla lezione completa di <strong>Arte: Umanesimo e Rinascimento</strong>, con prospettiva, grandi artisti e quiz interattivo.</p>
+<div class="actions"><a class="btn" href="../subject/">Esplora tutte le materie ↗</a><a class="btn secondary" href="../subject/arte/umanesimo-rinascimento/">Studia Arte ↗</a></div>
+</div></section>
 <section class="section story"><div class="wrap story-grid">
 <div><p class="label">LA STORIA</p><h2>Una macchina che ricorda</h2><p>Ethan e Mira si ritrovano in un deposito sotterraneo dove un'unità chiamata OBELISK-7 si risveglia. Un segnale antico e un esperimento segreto collegano la memoria di Mira all'enorme macchina. Quando il comandante Varga rivela il suo piano, l'intero complesso mostra un segreto molto più grande.</p><p>RIFT è una serie di fantascienza originale ZORIX realizzata con strumenti di produzione audiovisiva assistita dall'intelligenza artificiale e montaggio creativo.</p></div>
 <aside class="side-card"><h3>Personaggi e unità</h3><ul><li><strong>Ethan</strong> — protagonista umano</li><li><strong>Mira</strong> — collegata alla tecnologia biomeccanica</li><li><strong>OBELISK-7</strong> — unità meccanica gigante</li><li><strong>Varga</strong> — comandante HELIX</li><li><strong>ABYSS-7</strong> — macchina di contenimento a quattro zampe</li></ul></aside>
 </div></section>
 </main>
-<footer class="footer"><div class="wrap"><span>© 2026 ZORIX MOVIES · RIFT · STAGIONE 01</span><a href="../#film">Scopri le altre produzioni ZORIX ↗</a></div></footer>
+<footer class="footer"><div class="wrap"><span>© 2026 ZORIX MOVIES · RIFT · STAGIONE 01</span><a href="../subject/">ZORIX Subject · Studia ↗</a><a href="../#film">Scopri le altre produzioni ZORIX ↗</a></div></footer>
 </body>
 </html>
