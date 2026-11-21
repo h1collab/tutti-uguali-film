@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">NULVORIA — anteprima cinematografica</title>
+<desc id="desc">Illustrazione originale di un supermercato liminale deserto: corsie interminabili, luci fluorescenti, una cassa lontana e un orologio bloccato alle 03:17.</desc>
+<defs>
+<linearGradient id="bg" x2="0" y2="1"><stop stop-color="#0b1a22"/><stop offset=".5" stop-color="#162c2b"/><stop offset="1" stop-color="#050d14"/></linearGradient>
+<linearGradient id="floor" x2="0" y2="1"><stop stop-color="#25433d"/><stop offset=".6" stop-color="#112527"/><stop offset="1" stop-color="#06121b"/></linearGradient>
+<linearGradient id="left" x2="1" y2=".2"><stop stop-color="#050f18"/><stop offset=".7" stop-color="#243832"/><stop offset="1" stop-color="#53695b"/></linearGradient>
+<linearGradient id="right" x2="0" y2=".3"><stop stop-color="#050f17"/><stop offset=".75" stop-color="#27392f"/><stop offset="1" stop-color="#566958"/></linearGradient>
+<radialGradient id="light" cx=".5" cy=".28" r=".7"><stop stop-color="#c4dcc3" stop-opacity=".64"/><stop offset=".4" stop-color="#8ac1ad" stop-opacity=".1"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade" x2="0" y2="1"><stop stop-color="#071219" stop-opacity=".16"/><stop offset=".59" stop-color="#071219" stop-opacity=".08"/><stop offset=".79" stop-color="#071219" stop-opacity=".71"/><stop offset="1" stop-color="#050b13" stop-opacity="1"/></linearGradient>
+<radialGradient id="vignette"><stop offset=".45" stop-color="#02070c" stop-opacity="0"/><stop offset="1" stop-color="#02070c" stop-opacity=".9"/></radialGradient>
+<filter id="glow" x="-60%" y="-100%" width="220%" height="300%"><feGaussianBlur stdDeviation="11"/></filter>
+<filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/>
+<rect width="1600" height="900" fill="url(#light)"/>
+<!-- A supermarket that recedes toward one impossible central vanishing point. -->
+<polygon points="0,0 1600,0 950,348 650,348" fill="#1e312f"/>
+<polygon points="0,0 650,348 650,550 0,900" fill="url(#left)"/>
+<polygon points="1600,0 950,348 950,550 1600,900" fill="url(#right)"/>
+<polygon points="0,900 650,550 950,550 1600,900" fill="url(#floor)"/>
+<rect x="646" y="345" width="308" height="210" fill="#0b1d21" stroke="#779f92" stroke-opacity=".7" stroke-width="4"/>
+<rect x="701" y="381" width="198" height="158" fill="#112927" stroke="#9dbaa1" stroke-opacity=".55" stroke-width="2"/>
+<rect x="753" y="406" width="94" height="133" fill="#050e12" stroke="#bac9ad" stroke-opacity=".25"/>
+<rect x="770" y="426" width="59" height="17" fill="#5e9880" opacity=".28"/>
+<path d="M 796 540 V900 M 780 540 L650 900 M 815 540 L950 900 M 730 540 L180 900 M 870 540 L1420 900" stroke="#7c9f90" stroke-width="2" opacity=".15"/>
+<path d="M0 810 L650 537 M0 692 L650 523 M0 583 L650 504 M1600 810 L950 537 M1600 692 L950 523 M1600 583 L950 504" stroke="#a9c1a7" stroke-width="2" opacity=".14"/>
+<!-- Aisle shelving. -->
+<g><path d="M0 290 L630 390" stroke="#93a59a" stroke-opacity="0.31" stroke-width="8"/><path d="M0 310 L630 396" stroke="#121f27" stroke-width="21"/>
+<path d="M0 352 L623 395" stroke="#93a59a" stroke-opacity="0.28" stroke-width="8"/><path d="M0 372 L623 401" stroke="#121f27" stroke-width="21"/>
+<path d="M0 414 L616 400" stroke="#93a59a" stroke-opacity="0.26" stroke-width="8"/><path d="M0 434 L616 406" stroke="#121f27" stroke-width="21"/>
+<path d="M0 476 L609 405" stroke="#93a59a" stroke-opacity="0.23" stroke-width="8"/><path d="M0 496 L609 411" stroke="#121f27" stroke-width="21"/>
+<path d="M0 538 L602 410" stroke="#93a59a" stroke-opacity="0.21" stroke-width="8"/><path d="M0 558 L602 416" stroke="#121f27" stroke-width="21"/>
+<path d="M0 600 L595 415" stroke="#93a59a" stroke-opacity="0.18" stroke-width="8"/><path d="M0 620 L595 421" stroke="#121f27" stroke-width="21"/>
+<path d="M0 662 L588 420" stroke="#93a59a" stroke-opacity="0.16" stroke-width="8"/><path d="M0 682 L588 426" stroke="#121f27" stroke-width="21"/></g>
+<g><path d="M1600 290 L970 390" stroke="#9daea1" stroke-opacity="0.28" stroke-width="8"/><path d="M1600 310 L970 396" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 352 L977 395" stroke="#9daea1" stroke-opacity="0.26" stroke-width="8"/><path d="M1600 372 L977 401" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 414 L984 400" stroke="#9daea1" stroke-opacity="0.23" stroke-width="8"/><path d="M1600 434 L984 406" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 476 L991 405" stroke="#9daea1" stroke-opacity="0.21" stroke-width="8"/><path d="M1600 496 L991 411" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 538 L998 410" stroke="#9daea1" stroke-opacity="0.19" stroke-width="8"/><path d="M1600 558 L998 416" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 600 L1005 415" stroke="#9daea1" stroke-opacity="0.17" stroke-width="8"/><path d="M1600 620 L1005 421" stroke="#121f27" stroke-width="21"/>
+<path d="M1600 662 L1012 420" stroke="#9daea1" stroke-opacity="0.14" stroke-width="8"/><path d="M1600 682 L1012 426" stroke="#121f27" stroke-width="21"/></g>
+<path d="M90 0 L684 345 M1510 0 L916 345" stroke="#b5c5ac" stroke-width="8" opacity=".12"/>
+<!-- Corridor lighting -->
+<g fill="#cce7cb">
+<polygon points="440,72 1160,72 1028,115 572,115" opacity=".65"/>
+<polygon points="566,166 1034,166 973,190 626,190" opacity=".52"/>
+<polygon points="643,236 957,236 929,250 671,250" opacity=".45"/>
+<polygon points="695,286 905,286 890,294 710,294" opacity=".35"/>
+<polygon points="746,321 854,321 845,326 755,326" opacity=".3"/>
+</g>
+<g fill="#d6efcc" filter="url(#glow)" opacity=".52">
+<polygon points="440,77 1160,77 1028,114 572,114"/>
+<polygon points="570,166 1030,166 973,189 626,189"/>
+</g>
+<!-- Checkout number / impossible clock -->
+<g font-family="'Courier New',monospace">
+<rect x="1217" y="94" width="274" height="145" rx="7" fill="#041019" fill-opacity=".9" stroke="#90b5a2" stroke-opacity=".43" stroke-width="2"/>
+<text x="1250" y="132" fill="#9abdae" font-size="21" letter-spacing="7">CLOCK</text>
+<text x="1250" y="199" fill="#e8d4a3" font-size="67" letter-spacing="7" font-weight="bold">03:17</text>
+<path d="M1250 213 H1465" stroke="#729783" stroke-width="2" opacity=".7"/>
+</g>
+<!-- UI labels -->
+<g font-family="'Courier New',monospace" fill="#bdcfbf">
+<text x="104" y="91" font-size="22" letter-spacing="7">BASE // ARCHIVE</text>
+<text x="107" y="126" font-size="15" letter-spacing="5" opacity=".66">LEVEL 0 — THE ENDLESS MART</text>
+</g>
+<rect width="1600" height="900" fill="url(#fade)"/>
+<rect width="1600" height="900" fill="url(#vignette)" opacity=".65"/>
+<rect width="1600" height="900" filter="url(#grain)" opacity=".085"/>
+<!-- Teaser typography -->
+<text x="800" y="743" fill="#f6f1df" font-family="Georgia,'Times New Roman',serif" font-size="139" letter-spacing="24" text-anchor="middle">NULVORIA</text>
+<text x="800" y="791" fill="#c9dfd3" font-family="Arial,sans-serif" font-size="20" letter-spacing="10" text-anchor="middle">IL LUOGO RICORDA</text>
+<path d="M520 818 H1080" stroke="#c4c9b2" stroke-opacity=".45" stroke-width="1"/>
+<text x="800" y="853" fill="#d8be91" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="7" text-anchor="middle">FILM IN PREPARAZIONE  ·  PROSSIMAMENTE</text>
+</svg>
