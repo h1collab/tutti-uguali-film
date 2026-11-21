@@ -79,3 +79,15 @@
 .music-copy .italics{color:#edd0b9}
 .music-copy .film-tags{margin:24px 0}
 @media(max-width:700px){.music-layout{grid-template-columns:1fr;gap:27px}.music-art{width:min(100%,280px)}.music-copy h2{font-size:53px}.music-copy .movie-actions{margin-top:18px}}
+
+/* NULVORIA upcoming film announcement — original widescreen SVG teaser */
+.film-card--nulvoria{margin-bottom:26px;border-color:#c3d3b44a;background:linear-gradient(135deg,#23342e,#0a1921 80%)}
+.film-card--nulvoria .film-info h3{font-size:clamp(48px,6.4vw,88px);letter-spacing:-.055em}
+.film-card--nulvoria .release-label{color:#e2d0a4}
+.film-card--nulvoria .italics{color:#d8e0cc}
+.film-art--nulvoria{position:relative;background:#101f23;display:block;overflow:hidden}
+.film-art--nulvoria img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .55s ease,filter .55s ease}
+.film-art--nulvoria:hover img{transform:scale(1.035);filter:brightness(1.12)}
+.nulvoria-art-flag{position:absolute;z-index:2;top:20px;left:20px;padding:9px 12px;font-size:10px;letter-spacing:.13em;font-weight:900;color:#e9e0c4;background:#091d22d9;border:1px solid #d5c59a78;border-radius:5px}
+@media(max-width:700px){.film-art--nulvoria{min-height:350px}}
+@media(max-width:540px){.film-art--nulvoria{height:260px;min-height:0;max-height:none;aspect-ratio:16/9}.film-art--nulvoria img{position:absolute;inset:0;object-fit:cover}.film-card--nulvoria .film-info h3{font-size:clamp(40px,10vw,60px)}.nulvoria-art-flag{top:12px;left:12px;font-size:9px}}
